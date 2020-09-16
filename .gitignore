@@ -1,6 +1,9 @@
 # Screenshots
 screenshot *
 
+# Mac
+.DS_Store
+
 # Logs
 logs
 *.log

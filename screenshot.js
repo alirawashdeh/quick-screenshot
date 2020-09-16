@@ -3,13 +3,13 @@ const puppeteer = require('puppeteer')
 const urls = require('./urls').list
 const parallel = 4
 
-const screenshotColleges = async (urls, parallel) => {
+const takeScreenshots = async (urls, parallel) => {
   const parallelBatches = Math.ceil(urls.length / parallel)
 
-  console.log('\nI have gotten the task of taking screenshots of ' + urls.length + ' Wikipedia articles on colleges in Cologne and will take ' + parallel + ' of them in paralell.')
+  console.log('\nTaking ' + urls.length + ' screenshots, with a batch size of ' + parallel + '.')
   console.log(' This will result in ' + parallelBatches + ' batches.')
 
-  // Split up the Array of colleges
+  // Split up the Array of URLs
   let k = 0
   for (let i = 0; i < urls.length; i += parallel) {
     k++
@@ -56,4 +56,4 @@ const screenshotColleges = async (urls, parallel) => {
   }
 }
 
-screenshotColleges(urls, parallel)
+takeScreenshots(urls, parallel)

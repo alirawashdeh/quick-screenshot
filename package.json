@@ -1,0 +1,23 @@
+{
+  "name": "quick-screenshot",
+  "version": "1.0.0",
+  "description": "Quickly and easily screenshot a batch of web pages that use basic auth",
+  "main": "screenshot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node screenshot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirawashdeh/quick-screenshot.git"
+  },
+  "author": "Ali Rawashdeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alirawashdeh/quick-screenshot/issues"
+  },
+  "homepage": "https://github.com/alirawashdeh/quick-screenshot#readme",
+  "dependencies": {
+    "puppeteer": "2.0.0"
+  }
+}

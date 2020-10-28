@@ -2,10 +2,10 @@
   "name": "quick-screenshot",
   "version": "1.0.0",
   "description": "Quickly and easily screenshot a batch of web pages that use basic auth",
-  "main": "screenshot.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node screenshot.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
